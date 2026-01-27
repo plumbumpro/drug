@@ -15,11 +15,11 @@ const translations = {
             index_description: "融合人工智能与生物学前沿技术，重新定义肿瘤免疫药物研发的未来。",
             learn_more: "了解更多",
             team_title: "世界一流的研究团队",
-            team_subtitle: "汇聚跨学科精英，攻克能源领域的终极难题。",
+            team_subtitle: "汇聚跨学科精英，攻克制药领域的终极难题",
             news_title: "项目动态与科研成果",
             news_subtitle: "记录我们的每一步突破与创新。",
-            recruit_title: "寻找改变世界的你",
-            recruit_subtitle: "开放招募：诚邀有志于新能源与人工智能交叉领域的青年才俊加入。"
+            recruit_title: "AI药物设计的明天就在眼前",
+            recruit_subtitle: "开放招募：诚邀有志于药物研发、医学背景与人工智能交叉领域的青年才俊加入。"
         },
         sections: {
             intro: "项目介绍",
