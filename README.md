@@ -40,7 +40,7 @@
 |------|--------|----------|
 | 首页 | `index.html` | 项目介绍、核心优势、常见问题 |
 | 团队介绍 | `team.html` | 负责人信息、核心成员、团队风采 |
-| 动态与成果 | `news.html` | 最新进展、论文专利、项目时间线 |
+
 | 加入我们 | `recruit.html` | 招聘职位、职位详情、联系方式 |
 | 404 页面 | `404.html` | 404 错误页面 |
 
@@ -52,7 +52,7 @@
 IntelligentBattery/
 ├── index.html              # 首页
 ├── team.html               # 团队介绍页面
-├── news.html               # 动态与成果页面
+
 ├── recruit.html            # 招聘页面
 ├── 404.html                # 404 错误页面
 ├── favicon.svg             # 网站图标
@@ -277,8 +277,7 @@ php -S localhost:8000
 <ul class="nav-links">
     <li><a href="index.html" data-i18n="nav.home">首页</a></li>
     <li><a href="team.html" data-i18n="nav.team">团队介绍</a></li>
-    <li><a href="news.html" data-i18n="nav.news">动态与成果</a></li>
-    <li><a href="recruit.html" data-i18n="nav.recruit">加入我们</a></li>
+        <li><a href="recruit.html" data-i18n="nav.recruit">加入我们</a></li>
 </ul>
 ```
 
@@ -648,8 +647,7 @@ scp -r ./* user@server:/var/www/html/
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
        <url><loc>https://intelligentbattery.com/</loc></url>
        <url><loc>https://intelligentbattery.com/team.html</loc></url>
-       <url><loc>https://intelligentbattery.com/news.html</loc></url>
-       <url><loc>https://intelligentbattery.com/recruit.html</loc></url>
+              <url><loc>https://intelligentbattery.com/recruit.html</loc></url>
    </urlset>
    ```
 
