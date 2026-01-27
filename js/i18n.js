@@ -1,0 +1,680 @@
+// Internationalization (i18n) configuration for Intelligent Battery website
+// Supports Chinese (zh) and English (en)
+
+const translations = {
+    zh: {
+        nav: {
+            home: "首页",
+            team: "团队介绍",
+            news: "动态与成果",
+            recruit: "加入我们"
+        },
+        hero: {
+            index_title: "智御",
+            index_subtitle: "AI肿瘤免疫药物自主设计平台",
+            index_description: "融合人工智能与生物学前沿技术，重新定义肿瘤免疫药物研发的未来。",
+            learn_more: "了解更多",
+            team_title: "世界一流的研究团队",
+            team_subtitle: "汇聚跨学科精英，攻克能源领域的终极难题。",
+            news_title: "项目动态与科研成果",
+            news_subtitle: "记录我们的每一步突破与创新。",
+            recruit_title: "寻找改变世界的你",
+            recruit_subtitle: "开放招募：诚邀有志于新能源与人工智能交叉领域的青年才俊加入。"
+        },
+        sections: {
+            intro: "项目介绍",
+            faq: "常见问题",
+            leader: "项目负责人",
+            members: "核心成员",
+            mentors: "项目导师",
+            students: "项目学生",
+            gallery: "团队风采",
+            updates: "最新进展",
+            papers: "论文与专利",
+            timeline: "项目时间线",
+            awards: "获奖荣誉",
+            positions: "开放职位",
+            contact: "联系方式"
+        },
+        // Team specific translations
+        team: {
+            leader_name: "余峰 (Dr. Feng Yu)",
+            leader_role: "项目负责人 / 北京中关村学院导师",
+            leader_desc: "在中国科学院自动化研究所联合微软亚洲研究院完成博士学位，曾在深势科技、字节跳动、阿里巴巴等知名企业担任研究员。研究方向包括分子建模、推荐系统等，专注于大规模预训练分子搜索与生成、天然产物代谢组学、分子育种以及数据知识智能体的开发。中关村人工智能研究院研究员，主要从事科学智能研究工作。主持过产业智能等重大专项，发表论文二十余篇，引用四千余次。",
+            mentor1_name: "程翔然",
+            mentor1_role: "北京中关村学院导师",
+            mentor1_desc: "复旦大学高分子科学系博士，研究Self-driving Lab、AI for Materials等。",
+            mentor1_detail_title: "研究背景：",
+            mentor1_detail: "复旦大学高分子科学系博士，现任北京中关村学院导师。研究方向涵盖Self-driving Lab、Materials Science、AI for Materials、Synthesis、Polymer、Battery等领域。作为第一作者和共同第一作者在Nature、Angewandte Chemie、Advanced Materials等期刊上发表SCI论文7篇，合作发表论文18篇。致力于通过机器人技术、人工智能、先进材料和绿色化学工艺的结合，推动可持续能源技术的发展。",
+            mentor2_name: "杜红伟",
+            mentor2_role: "北京中关村学院导师",
+            mentor2_desc: "上海交通大学博士，研究方向AI for materials，具有BMS嵌入式软件开发经验。",
+            mentor2_detail_title: "研究背景：",
+            mentor2_detail: "上海交通大学博士，主要研究方向是AI for materials。工作期间主要在长安/CATL从事BMS（电池管理系统）嵌入式软件开发工作，博士期间在上海交大汪洪教授课题组，主要围绕材料的组分基深度学习多目标性质预测模型设计，结构基的图神经网络的预测/势模型的设计验证，以及机器学习方法在储能材料理性设计和高通量筛选、验证中的应用。发表SCI期刊论文10余篇，包括DenseGNN、L-G-DCNN深度学习模型设计等。",
+            mentor3_name: "贺鑫",
+            mentor3_role: "北京中关村学院导师",
+            mentor3_desc: "理学博士，从事AI4S、功能材料多尺度模拟与量子化学动力学研究。",
+            mentor3_detail_title: "研究背景：",
+            mentor3_detail: "理学博士，北京中关村学院助理教授。主要从事 AI4S（人工智能赋能科学发现）、功能材料多尺度模拟与量子化学动力学研究，聚焦 AI 驱动的材料性质预测、结构靶向生成及激发态动力学加速算法开发。参与多项前沿科研项目，发表 SCI 论文 10 余篇（含 5 篇第一作者），获北京大学优秀博士论文等多项学术奖励。",
+            mentor4_name: "黄永达",
+            mentor4_role: "北京中关村学院导师",
+            mentor4_desc: "北京航空航天大学计算材料学博士，从事第一性原理计算与量子蒙特卡洛研究。",
+            mentor4_detail_title: "研究背景：",
+            mentor4_detail: "北京航空航天大学计算材料学博士，斯洛伐克科学院博士后。硕博主要从事研究基于密度泛函理论的晶格热导率、电导率的第一性原理计算，参与国家重点研发专项一个，获得软件著作权一项。博士后期间，在欧盟Trex项目下于斯洛伐克科学院，主要研究传统、神经网络量子蒙特卡洛计算方法与应用，参与欧盟项目三个。共计以第一作者、通讯作者发表SCI期刊论文8余篇。",
+            mentor5_name: "李永恒",
+            mentor5_role: "北京中关村学院导师",
+            mentor5_desc: "工学博士，从事机器学习势函数开发、功能材料输运计算等研究。",
+            mentor5_detail_title: "研究背景：",
+            mentor5_detail: "工学博士。主要从事机器学习势函数开发、功能材料输运的计算方法与性质等方面研究工作。作为核心成员参与2021年国家重点研发计划，负责非弹性散射实验及相关计算模拟。近五年在Advanced Materials，Advanced Functional Materials、Nano Letters、Physical Review B等国际权威期刊发表SCI论文10篇。",
+            mentor6_name: "柳佳晖",
+            mentor6_role: "北京中关村学院导师",
+            mentor6_desc: "中关村人工智能研究院研究员，从事AI+材料智能设计与微观机理研究。",
+            mentor6_detail_title: "研究背景：",
+            mentor6_detail: "中关村人工智能研究院研究员。主要从事AI+材料领域的智能设计与微观机理研究，致力于构建融合机器学习算法与物理约束的多尺度模拟框架，基于该框架揭示高熵合金等复杂材料体系中的辐照损伤、塑性变形及缺陷演化等微观机制，进一步开发机器学习力场构建与性质计算平台，推动新型材料的智能化设计与发现。",
+            mentor7_name: "陆子恒",
+            mentor7_role: "项目导师",
+            mentor7_desc: "项目导师",
+            mentor7_detail_title: "研究背景：",
+            mentor7_detail: "暂无详细信息",
+            mentor8_name: "魏宝乐",
+            mentor8_role: "北京中关村学院导师",
+            mentor8_desc: "博士毕业于北京大学王选计算机研究所，从事AI for Science、科学智能体等研究。",
+            mentor8_detail_title: "研究背景：",
+            mentor8_detail: "博士毕业于北京大学王选计算机研究所，现就职于北京中关村学院及中关村人工智能研究院。主要从事AI for Science、科学智能体、文档分析与理解等方面研究工作。在 NeurIPS、AAAI、ICASSP 等相关重要国际学术会议发表论文十余篇，获国家发明专利授权2项，并参与国家重点研发计划、国家自然科学基金面上项目等多项重点项目。",
+            mentor9_name: "温健",
+            mentor9_role: "北京中关村学院导师",
+            mentor9_desc: "京都大学博士，从事多物理场数值仿真、高性能计算与AI代理模型研究。",
+            mentor9_detail_title: "研究背景：",
+            mentor9_detail: "京都大学博士。主要从事多物理场数值仿真、高性能计算与AI代理模型等方面研究工作。曾深度参与国产自主工业仿真软件内核求解器开发，独立负责锂电池、燃料电池、拉格朗日粒子法等多物理场求解模块开发，参与开发的电子散热模块已在华为、海思实现对国外商业软件的国产化替代，CAE经验涵盖流动、传热、辐射、多相流、燃烧、电化学、粒子法、气动声学、电子散热等多个领域。目前聚焦AI+新材料多尺度仿真建模，致力于打破微观材料性能与宏观服役性能之间的尺度鸿沟。",
+            student1_name: "边子涵",
+            student1_role: "项目学生",
+            student1_desc: "项目学生",
+            student1_detail_title: "简介：",
+            student1_detail: "暂无详细信息",
+            student2_name: "李安亿",
+            student2_role: "项目学生",
+            student2_desc: "中国人民大学高瓴人工智能学院博士生，研究AI材料设计。",
+            student2_detail_title: "简介：",
+            student2_detail: "中国人民大学高瓴人工智能学院博士生，主要研究方向为人工智能材料设计，聚焦于液态电解质等复杂体系的模型架构研究。目前已发表 CCF-A 类论文五篇。",
+            student3_name: "吕丁阳",
+            student3_role: "项目学生",
+            student3_desc: "中科院自动化所博士，研究基于智能体的材料设计。",
+            student3_detail_title: "简介：",
+            student3_detail: "中国科学院自动化研究所计算机应用技术专业博士，主要研究方向为基于智能体的材料设计与材料基础表征方法，致力于打造AI时代的材料设计新范式，曾获ICAIS大会2025最佳论文奖。",
+            student4_name: "吴倩云",
+            student4_role: "项目学生",
+            student4_desc: "项目学生",
+            student4_detail_title: "简介：",
+            student4_detail: "暂无详细信息",
+            student5_name: "尹富声",
+            student5_role: "项目学生",
+            student5_desc: "天津大学化学工程博士，研究固体电解质改性与AI+光谱。",
+            student5_detail_title: "简介：",
+            student5_detail: "天津大学化学工程博士，主要从事固体电解质的改性与理论模拟研究，相关方法在固体电解质体系及电催化体系中具有重要应用价值。目前聚焦于人工智能与光谱解析的交叉研究方向（AI+光谱），致力于将机器学习与物理化学机理相结合，提升材料结构与性能表征与解析效率。已在 SCI 期刊发表学术论文十余篇。",
+            student6_name: "张伯䶮",
+            student6_role: "项目学生",
+            student6_desc: "中国科学院大学控制科学与工程博士生，研究晶体结构设计。",
+            student6_detail_title: "简介：",
+            student6_detail: "中国科学院大学前沿交叉科学学院控制科学与工程博士生，主要研究方向为基于生成式人工智能的晶体结构设计。目前聚焦于高离子导固态电解质结构生成的研究，致力于将深度学习中的生成模型算法与晶体学原理深度融合，探索数据驱动的材料发现新范式。",
+            leader_desc_full: "人工智能与新能源交叉领域专家，拥有10年以上电池管理系统研发经验。主导过多项国家级重点研发计划，发表SCI论文50余篇。",
+            member1_name: "李明 (Ming Li)",
+            member1_role: "算法工程师",
+            member1_desc: "专注于深度学习与时间序列预测，负责SOC/SOH核心算法开发。",
+            member1_desc_full: "专注于深度学习与时间序列预测，负责SOC/SOH核心算法开发。",
+            member1_skills_title: "专业技能：",
+            member1_skills_1: "深度学习框架：PyTorch, TensorFlow, Keras",
+            member1_skills_2: "时序预测：LSTM, GRU, Transformer",
+            member1_skills_3: "电池建模：Thevenin模型, 二阶RC等效电路模型",
+            member1_skills_4: "开发经历：主导SOC估算模块开发，实测误差<1.8%",
+            member1_edu_title: "教育背景：",
+            member1_edu: "清华大学自动化系硕士（2023），研究方向为机器学习在能源系统中的应用",
+            member2_name: "王晓 (Xiao Wang)",
+            member2_role: "嵌入式系统专家",
+            member2_desc: "负责边缘计算节点的硬件架构设计与实时操作系统优化。",
+            member2_desc_full: "负责边缘计算节点的硬件架构设计与实时操作系统优化。",
+            member2_skills_title: "专业技能：",
+            member2_skills_1: "硬件平台：ARM Cortex-M系列, TI C2000 DSP, FPGA",
+            member2_skills_2: "实时系统：FreeRTOS, RT-Thread, 嵌入式Linux",
+            member2_skills_3: "通信协议：CAN, CAN FD, Ethernet, MQTT",
+            member2_skills_4: "设计成就：完成车规级BMS采集板设计，通过ISO 26262功能安全认证",
+            member2_edu_title: "教育背景：",
+            member2_edu: "北京理工大学电子工程系硕士（2022），主攻车载网络与嵌入式系统",
+            member3_name: "Sarah Chen",
+            member3_role: "数据科学家",
+            member3_desc: "擅长大数据挖掘与云端平台构建，保障海量电池数据的高效处理。",
+            member3_desc_full: "擅长大数据挖掘与云端平台构建，保障海量电池数据的高效处理。",
+            member3_skills_title: "专业技能：",
+            member3_skills_1: "大数据技术：Spark, Flink, Kafka, Hadoop",
+            member3_skills_2: "云平台：AWS, Azure, Kubernetes, Docker",
+            member3_skills_3: "数据库：TimescaleDB, InfluxDB, PostgreSQL",
+            member3_skills_4: "系统架构：设计支持百万级电池单体并发监控的云平台",
+            member3_edu_title: "教育背景：",
+            member3_edu: "Stanford University计算机科学硕士（2023），专注于分布式计算与数据工程",
+            gallery_caption1: "实验室日常研讨",
+            gallery_caption2: "国际会议学术交流",
+            gallery_caption3: "年度团建活动",
+            gallery_caption4: "团队协作讨论",
+            gallery_click_hint: "（点击放大）",
+            photo1: "实验室日常研讨",
+            photo2: "国际会议学术交流",
+            photo3: "年度团建活动",
+            click_enlarge: "（点击放大）",
+            details: "点击详情",
+            skills: "专业技能",
+            education: "教育背景"
+        },
+        cards: {
+            background_title: "管线特色",
+            background_desc: "PD1-IL2是汇聚前沿生物学洞见与转化潜力的关键靶点，其开发不仅具备严谨的科学依据与千亿规模的市场，更承载着肿瘤免疫治疗下一阶段突破的重要使命。",
+            background_expand: "点击展开",
+            background_collapse: "点击收起",
+            background_ch1_title: "生物侧评估结果",
+            background_ch2_title: "平台潜力",
+            background_ch2_text: "IL2作为连接抗体与多肽的关键细胞因子，其深入研究将同步推动两类治疗模式的平台化发展。相关研究可以泛化到抗体的VHH、VL、VH设计与优化，具有很好的产业转化潜力。",
+            research_title: "AI特色 - 模块化",
+            research_desc: "AI药物研发系统分为四个层面：临床市场信息层、AI自主立项层、数字实验室层、实验智能管理层，实现全流程智能化。",
+            research_ch1_title: "智能信息引擎",
+            research_ch2_title: "系统优势",
+            research_ch2_text: "通过模块化设计，实现从信息收集到实验验证的全流程自动化，显著提升药物研发效率和成功率。",
+            content_title: "AI特色 - 多目标优化与可控性",
+            content_desc: "通过多目标强化学习优化和领域知识约束，实现从黑盒最优到可控权衡的智能药物设计。",
+            content_ch1_title: "多目标优化",
+            content_ch2_title: "可控性保障",
+            content_ch2_text: "数据冷启动流水线（LLM+Agent）实现收集-筛选-分析-预标注闭环，领域知识约束显式化，干湿闭环校准持续优化，跨文献/机制/靶点覆盖提升泛化性。"
+        },
+        faq: {
+            q1: "什么是PD1-IL2融合蛋白？",
+            a1: "PD1-IL2融合蛋白是一种创新的肿瘤免疫治疗药物，将PD1抗体与IL2细胞因子融合，既能阻断肿瘤免疫逃逸，又能激活免疫细胞。IL2作为连接抗体与多肽的关键细胞因子，其研究将推动多种免疫治疗模式的发展。",
+            q2: "平台的AI设计流程是怎样的？",
+            a2: "平台采用模块化设计：临床信息层负责市场与靶点信息收集；AI立项层进行智能决策；数字实验室层进行序列设计与优化，通过多目标强化学习实现亲和力、稳定性等多维度优化；实验管理层实现干湿闭环反馈，持续提升预测准确性。",
+            q3: "相比传统药物研发，AI平台有什么优势？",
+            a3: "传统药物研发采用试错法，周期长成本高。我们的AI平台通过多目标优化，实现可表达性超过40%，受体结合命中率接近100%。平台具备数据冷启动能力，可在文献数据不足时自主生成训练数据。跨文献/机制/靶点的多层次建模支撑多路径探索，显著缩短研发周期，降低研发成本。",
+            q4: "项目的应用前景如何？",
+            a4: "项目聚焦PD1-IL2融合蛋白等肿瘤免疫药物，具备千亿规模市场潜力。平台技术高度可拓展，可快速迁移至抗体VHH、VL、VH设计与优化等领域。目前已获得4个不同活性IL2候选蛋白，初步具备PCC分子潜力，动物实验结果良好。平台的产业转化潜力显著，有望在肿瘤免疫治疗领域实现突破。"
+        },
+        news: {
+            update1_date: "2026.01",
+            update1_title: "PD1-IL2候选药物动物实验取得突破",
+            update1_desc: "0042候选蛋白的MC38动物实验结果良好，表达纯化表现优异（瞬转表达量150-500mg/L，纯度超过90%），B16F10实验持续推进中。",
+            update2_date: "2025.12",
+            update2_title: "AI平台成功筛选出4个高潜力候选蛋白",
+            update2_desc: "通过PBMC pSTAT5实验，从30余个符合开发标准的单体中成功筛选出0008、0042、0059、0085四个候选蛋白，初步具备PCC分子潜力。",
+            papers_title: "期刊论文",
+            papers_details_title: "论文详情：",
+            papers_summary_title: "发表成果：",
+            paper1_desc: "首次将多目标强化学习应用于肿瘤免疫药物设计，通过ZMutation算法实现亲和力、免疫原性、稳定性等多维度优化，受体结合命中率接近100%，可表达性超过40%。",
+            paper2_desc: "提出基于LLM+Agent的数据冷启动流水线，实现收集-筛选-分析-预标注闭环，显著缩短数据构建周期，跨文献/机制/靶点覆盖提升泛化性与鲁棒性。",
+            papers_summary: "累计发表SCI论文30余篇，其中Nature系列、Cell系列顶级期刊8篇，Drug Discovery Today等药物研发一区期刊12篇，谷歌学术总引用次数500+。",
+            patents_title: "发明专利",
+            patents_details_title: "专利详情：",
+            patents_summary_title: "专利成果：",
+            patent1_desc: "本发明公开了一种基于多目标强化学习的肿瘤免疫药物智能设计方法，通过ZMutation算法在突变规则、可合成性等约束下进行Pareto优化，实现亲和力、免疫原性、稳定性等多维度目标的可控权衡，受体结合命中率达98%以上。",
+            patent2_desc: "本发明提出一种融合大语言模型与智能体的药物研发数据冷启动系统，实现收集-筛选-分析-预标注闭环，相比传统数据构建方法，周期缩短60%，人工成本降低70%，一致性显著提升。",
+            patents_summary: "累计申请发明专利18项，已授权8项，其中国际PCT专利2项，核心技术已应用于多个药物研发项目。",
+            award_title: "2025年度 AI与生物医药交叉创新奖",
+            award_org: "授予单位：中国人工智能学会",
+            award1_caption: "ICAIS Best Paper Award",
+            award2_caption: "The AI Reviewer's Appraisal Award"
+        },
+        timeline: {
+            t1_title: "平台启动",
+            t1_desc: "组建AI+生物交叉团队，确立PD1-IL2研发路线",
+            t2_title: "AI突破",
+            t2_desc: "多目标优化算法验证成功，受体结合命中率近100%",
+            t3_title: "生物验证",
+            t3_desc: "成功表达40+条IL2单体，可表达性超40%",
+            t4_title: "候选筛选",
+            t4_desc: "筛选出4个候选蛋白，初步具备PCC分子潜力",
+            t5_title: "动物实验",
+            t5_desc: "0042候选蛋白MC38动物实验结果良好",
+            t6_title: "临床转化",
+            t6_desc: "推进IND申报，启动临床前研究"
+        },
+        recruit: {
+            job1_title: "AI算法研究员",
+            job1_desc: "负责电池寿命预测、故障诊断等核心算法的研究与复现。",
+            job1_req1: "计算机、自动化或数学相关专业，硕士及以上学历；",
+            job1_req2: "熟悉Python/C++，精通PyTorch/TensorFlow框架；",
+            job1_req3: "有一作顶会论文者优先。",
+            job2_title: "BMS硬件工程师",
+            job2_desc: "负责BMS采集板、主控板的原理图设计与PCB Layout。",
+            job2_req1: "电子工程相关专业，本科及以上学历；",
+            job2_req2: "熟悉ARM/DSP架构，有车规级硬件开发经验者优先；",
+            job2_req3: "熟练使用Altium Designer/Cadence。",
+            job3_title: "嵌入式软件工程师",
+            job3_desc: "负责BMS嵌入式软件开发，包括驱动程序、通信协议栈等。",
+            job3_req1: "软件工程、计算机相关专业，本科及以上学历；",
+            job3_req2: "精通C/C++，熟悉嵌入式开发流程；",
+            job3_req3: "有AutoSAR、OSEK/VDX经验者优先。",
+            responsibilities: "岗位职责：",
+            requirements: "任职要求：",
+            contact_desc: "请将简历发送至以下邮箱，邮件标题注明姓名+应聘职位",
+            location: "办公地点：北京市海淀区中关村前沿技术大厦"
+        },
+        footer: {
+            repo: "Gitee仓库",
+            contact: "联系我们",
+            copyright: "© 2026 智御 AI Drug Design Platform. All Rights Reserved."
+        },
+        interactive: {
+            expand: "点击展开",
+            collapse: "点击收起",
+            details: "点击详情",
+            close: "关闭"
+        }
+    },
+    en: {
+        nav: {
+            home: "Home",
+            team: "Team",
+            news: "News",
+            recruit: "Join Us"
+        },
+        hero: {
+            index_title: "ZhiYu",
+            index_subtitle: "AI-driven Tumor Immunotherapy Drug Design Platform",
+            index_description: "Integrating AI with cutting-edge biology to redefine the future of tumor immunotherapy drug development.",
+            learn_more: "Learn More",
+            team_title: "World-Class Research Team",
+            team_subtitle: "Gathering interdisciplinary elites to tackle the ultimate challenges in energy.",
+            news_title: "Project Updates & Achievements",
+            news_subtitle: "Documenting every breakthrough and innovation.",
+            recruit_title: "Looking for World-Changers",
+            recruit_subtitle: "Open positions: Inviting young talents passionate about renewable energy and AI to join us."
+        },
+        sections: {
+            intro: "Project Introduction",
+            faq: "Frequently Asked Questions",
+            leader: "Project Leader",
+            members: "Core Members",
+            mentors: "Project Mentors",
+            students: "Project Students",
+            gallery: "Team Gallery",
+            updates: "Latest Updates",
+            papers: "Papers & Patents",
+            timeline: "Project Timeline",
+            awards: "Awards & Honors",
+            positions: "Open Positions",
+            contact: "Contact Information"
+        },
+        cards: {
+            background_title: "Pipeline Features",
+            background_desc: "PD1-IL2 represents a critical target combining frontier biological insights with translational potential, with rigorous scientific basis, billion-scale market, and mission to breakthrough next-phase tumor immunotherapy.",
+            background_expand: "Click to Expand",
+            background_collapse: "Click to Collapse",
+            background_ch1_title: "Biological Assessment Results",
+            background_ch2_title: "Platform Potential",
+            background_ch2_text: "IL2 as a key cytokine linking antibodies and peptides, its research will promote platform development of both therapeutic modalities. Related research can be generalized to antibody VHH, VL, VH design and optimization with strong industrial translation potential.",
+            research_title: "AI Features - Modular Design",
+            research_desc: "AI drug R&D system comprises four layers: clinical market intelligence, AI autonomous project initiation, digital laboratory, and intelligent experiment management, achieving full-process intelligence.",
+            research_ch1_title: "Intelligent Information Engine",
+            research_ch2_title: "System Advantages",
+            research_ch2_text: "Through modular design, achieves full-process automation from information collection to experimental validation, significantly improving drug R&D efficiency and success rate.",
+            content_title: "AI Features - Multi-objective Optimization & Controllability",
+            content_desc: "Through multi-objective reinforcement learning optimization and domain knowledge constraints, achieving intelligent drug design from black-box optimization to controllable trade-offs.",
+            content_ch1_title: "Multi-objective Optimization",
+            content_ch2_title: "Controllability Assurance",
+            content_ch2_text: "Data cold-start pipeline (LLM+Agent) achieves collection-screening-analysis-pre-annotation closed loop, domain knowledge constraints made explicit, wet-dry loop calibration for continuous optimization, cross-literature/mechanism/target coverage improves generalization."
+        },
+        faq: {
+            q1: "What is PD1-IL2 fusion protein?",
+            a1: "PD1-IL2 fusion protein is an innovative tumor immunotherapy drug that fuses PD1 antibody with IL2 cytokine, both blocking tumor immune escape and activating immune cells. IL2 as a key cytokine linking antibodies and peptides, its research will promote development of multiple immunotherapy modalities.",
+            q2: "What is the AI design workflow of the platform?",
+            a2: "Platform adopts modular design: Clinical information layer handles market and target information collection; AI project initiation layer makes intelligent decisions; Digital laboratory layer performs sequence design and optimization through multi-objective reinforcement learning for affinity, stability and other multi-dimensional optimization; Experiment management layer achieves wet-dry loop feedback to continuously improve prediction accuracy.",
+            q3: "What advantages does the AI platform have over traditional drug R&D?",
+            a3: "Traditional drug R&D uses trial-and-error approach with long cycles and high costs. Our AI platform through multi-objective optimization achieves expressibility over 40% and receptor binding hit rate close to 100%. Platform has data cold-start capability to autonomously generate training data when literature data is insufficient. Multi-level modeling across literature/mechanism/target supports multi-path exploration, significantly shortening R&D cycles and reducing costs.",
+            q4: "What are the application prospects of this project?",
+            a4: "Project focuses on PD1-IL2 fusion proteins and other tumor immunotherapy drugs with billion-scale market potential. Platform technology is highly scalable and can rapidly migrate to antibody VHH, VL, VH design and optimization. Currently obtained 4 IL2 candidate proteins with different activities, preliminarily possessing PCC molecule potential, with good animal experimental results. Platform has significant industrial translation potential with promise for breakthroughs in tumor immunotherapy field."
+        },
+        team: {
+            leader_name: "Dr. Feng Yu",
+            leader_role: "Project Leader / Zhongguancun Academy Advisor",
+            leader_desc: "Completed PhD at Institute of Automation, Chinese Academy of Sciences, in collaboration with Microsoft Research Asia. Served as researcher at DP Technology, ByteDance, and Alibaba. Research interests include molecular modeling, recommendation systems, focusing on large-scale pre-training molecular search and generation, natural product metabolomics, molecular breeding, and data-knowledge agent development. Researcher at Zhongguancun Institute of Artificial Intelligence, focusing on scientific intelligence research. Led major projects in industrial intelligence, published 20+ papers with 4000+ citations.",
+            mentor1_name: "Xiangran Cheng",
+            mentor1_role: "Zhongguancun Academy Advisor",
+            mentor1_desc: "PhD in Polymer Science from Fudan University, researching Self-driving Lab, AI for Materials, etc.",
+            mentor1_detail_title: "Research Background:",
+            mentor1_detail: "PhD in Polymer Science from Fudan University, currently advisor at Zhongguancun Academy. Research covers Self-driving Lab, Materials Science, AI for Materials, Synthesis, Polymer, Battery. Published 7 SCI papers as first/co-first author in Nature, Angewandte Chemie, Advanced Materials, and 18 collaborative papers. Dedicated to advancing sustainable energy technologies through robotics, AI, advanced materials and green chemistry.",
+            mentor2_name: "Hongwei Du",
+            mentor2_role: "Zhongguancun Academy Advisor",
+            mentor2_desc: "PhD from Shanghai Jiao Tong University, specializing in AI for materials with BMS development experience.",
+            mentor2_detail_title: "Research Background:",
+            mentor2_detail: "PhD from Shanghai Jiao Tong University, specializing in AI for materials. Previously worked at Changan/CATL on BMS embedded software development. Doctoral research in Prof. Wang Hong's group focused on composition-based deep learning multi-objective property prediction, structure-based graph neural networks, and machine learning applications in rational design and high-throughput screening of energy storage materials. Published 10+ SCI papers including DenseGNN and L-G-DCNN models.",
+            mentor3_name: "Xin He",
+            mentor3_role: "Zhongguancun Academy Advisor",
+            mentor3_desc: "PhD in Science, researching AI4S, multiscale simulation and quantum chemical dynamics.",
+            mentor3_detail_title: "Research Background:",
+            mentor3_detail: "PhD in Science, Assistant Professor at Zhongguancun Academy. Research focuses on AI4S (AI for Scientific Discovery), multiscale simulation of functional materials and quantum chemical dynamics, specializing in AI-driven material property prediction, structure-targeted generation and excited state dynamics acceleration algorithms. Participated in multiple frontier research projects, published 10+ SCI papers (including 5 as first author), received Outstanding Doctoral Dissertation Award from Peking University and other academic honors.",
+            mentor4_name: "Yongda Huang",
+            mentor4_role: "Zhongguancun Academy Advisor",
+            mentor4_desc: "PhD in Computational Materials Science from Beihang University, researching first-principles calculations and quantum Monte Carlo.",
+            mentor4_detail_title: "Research Background:",
+            mentor4_detail: "PhD in Computational Materials Science from Beihang University, postdoc at Slovak Academy of Sciences. Master's and doctoral research focused on first-principles calculations of lattice thermal conductivity and electrical conductivity based on density functional theory. Participated in one National Key R&D Program and holds one software copyright. During postdoctoral period at Slovak Academy of Sciences under EU Trex project, researched traditional and neural network quantum Monte Carlo methods and applications, participated in three EU projects. Published 8+ SCI papers as first/corresponding author.",
+            mentor5_name: "Yongheng Li",
+            mentor5_role: "Zhongguancun Academy Advisor",
+            mentor5_desc: "PhD in Engineering, researching machine learning potentials and functional materials transport.",
+            mentor5_detail_title: "Research Background:",
+            mentor5_detail: "PhD in Engineering. Research focuses on machine learning potential development and computational methods for functional material transport. Core member of 2021 National Key R&D Program, responsible for inelastic scattering experiments and simulations. Published 10 SCI papers in past 5 years in Advanced Materials, Advanced Functional Materials, Nano Letters, Physical Review B and other authoritative journals.",
+            mentor6_name: "Jiahui Liu",
+            mentor6_role: "Zhongguancun Academy Advisor",
+            mentor6_desc: "Researcher at Zhongguancun Institute of AI, researching AI+materials intelligent design and micro-mechanisms.",
+            mentor6_detail_title: "Research Background:",
+            mentor6_detail: "Researcher at Zhongguancun Institute of Artificial Intelligence. Research focuses on intelligent design and micro-mechanism investigation in AI+materials field, committed to building multiscale simulation frameworks integrating machine learning algorithms and physical constraints. Based on this framework, reveals micro-mechanisms such as irradiation damage, plastic deformation and defect evolution in complex material systems like high-entropy alloys. Further develops machine learning force field construction and property calculation platforms to promote intelligent design and discovery of new materials.",
+            mentor7_name: "Ziheng Lu",
+            mentor7_role: "Project Mentor",
+            mentor7_desc: "Project Mentor",
+            mentor7_detail_title: "Research Background:",
+            mentor7_detail: "Information not available",
+            mentor8_name: "Baole Wei",
+            mentor8_role: "Zhongguancun Academy Advisor",
+            mentor8_desc: "PhD from Peking University, researching AI for Science, scientific agents, etc.",
+            mentor8_detail_title: "Research Background:",
+            mentor8_detail: "PhD from Peking University Founders Research Institute. Currently working at Zhongguancun Academy and Zhongguancun Institute of Artificial Intelligence. Research focuses on AI for Science, scientific agents, document analysis and understanding. Published 10+ papers at NeurIPS, AAAI, ICASSP and other major international conferences. Holds 2 national invention patents and participates in national key R&D programs and NSFC projects.",
+            mentor9_name: "Jian Wen",
+            mentor9_role: "Zhongguancun Academy Advisor",
+            mentor9_desc: "PhD from Kyoto University, researching multiphysics numerical simulation, HPC and AI surrogate models.",
+            mentor9_detail_title: "Research Background:",
+            mentor9_detail: "PhD from Kyoto University. Research focuses on multiphysics numerical simulation, high-performance computing and AI surrogate models. Deeply involved in domestic independent industrial simulation software kernel solver development, independently responsible for development of multiphysics modules including lithium batteries, fuel cells, and Lagrangian particle methods. Participated in electronic cooling module that achieved domestic replacement of foreign commercial software at Huawei and HiSilicon. CAE experience covers flow, heat transfer, radiation, multiphase flow, combustion, electrochemistry, particle methods, aeroacoustics, electronic cooling and other fields. Currently focusing on AI+new materials multiscale simulation modeling, committed to bridging the scale gap between microscopic material properties and macroscopic service performance.",
+            student1_name: "Zihan Bian",
+            student1_role: "Project Student",
+            student1_desc: "Project Student",
+            student1_detail_title: "Profile:",
+            student1_detail: "Information not available",
+            student2_name: "Anyi Li",
+            student2_role: "Project Student",
+            student2_desc: "PhD student at Gaoling School of AI, Renmin University, researching AI materials design.",
+            student2_detail_title: "Profile:",
+            student2_detail: "PhD student at Gaoling School of Artificial Intelligence, Renmin University of China. Research focuses on artificial intelligence materials design, specializing in model architecture research for complex systems such as liquid electrolytes. Published 5 CCF-A papers.",
+            student3_name: "Dingyang Lyu",
+            student3_role: "Project Student",
+            student3_desc: "PhD student at CASIA, researching agent-based materials design.",
+            student3_detail_title: "Profile:",
+            student3_detail: "PhD student in Computer Application Technology at Institute of Automation, Chinese Academy of Sciences. Research focuses on agent-based materials design and fundamental materials characterization methods, dedicated to creating new paradigm for materials design in the AI era. Recipient of ICAIS 2025 Best Paper Award.",
+            student4_name: "Qianyun Wu",
+            student4_role: "Project Student",
+            student4_desc: "Project Student",
+            student4_detail_title: "Profile:",
+            student4_detail: "Information not available",
+            student5_name: "Fusheng Yin",
+            student5_role: "Project Student",
+            student5_desc: "PhD in Chemical Engineering from Tianjin University, researching solid electrolyte modification and AI+spectroscopy.",
+            student5_detail_title: "Profile:",
+            student5_detail: "PhD in Chemical Engineering from Tianjin University. Research focuses on modification and theoretical simulation of solid electrolytes, with important applications in solid electrolyte and electrocatalysis systems. Currently focusing on AI+spectroscopy cross-research direction, committed to combining machine learning with physicochemical mechanisms to improve efficiency of material structure and performance characterization and analysis. Published 10+ SCI papers.",
+            student6_name: "Boyan Zhang",
+            student6_role: "Project Student",
+            student6_desc: "PhD student at UCAS in Control Science and Engineering, researching crystal structure design.",
+            student6_detail_title: "Profile:",
+            student6_detail: "PhD student at School of Interdisciplinary Sciences, University of Chinese Academy of Sciences, majoring in Control Science and Engineering. Research focuses on generative AI-based crystal structure design, specializing in generation of high ionic conductivity solid electrolyte structures. Committed to deeply integrating deep learning generative models with crystallographic principles, exploring data-driven paradigms for materials discovery.",
+            member1_name: "Ming Li",
+            member1_role: "Algorithm Engineer",
+            member1_desc: "Focused on deep learning and time series prediction, responsible for SOC/SOH core algorithm development.",
+            member1_skills_title: "Professional Skills:",
+            member1_skills_1: "Deep Learning Frameworks: PyTorch, TensorFlow, Keras",
+            member1_skills_2: "Time Series Prediction: LSTM, GRU, Transformer",
+            member1_skills_3: "Battery Modeling: Thevenin model, Second-order RC equivalent circuit model",
+            member1_skills_4: "Development Experience: Led SOC estimation module development, measured error <1.8%",
+            member1_edu_title: "Education:",
+            member1_edu: "Master in Automation, Tsinghua University (2023), research focus: ML applications in energy systems",
+            member2_name: "Xiao Wang",
+            member2_role: "Embedded Systems Expert",
+            member2_desc: "Responsible for hardware architecture design and real-time OS optimization for edge computing nodes.",
+            member2_skills_title: "Professional Skills:",
+            member2_skills_1: "Hardware Platforms: ARM Cortex-M series, TI C2000 DSP, FPGA",
+            member2_skills_2: "Real-time Systems: FreeRTOS, RT-Thread, Embedded Linux",
+            member2_skills_3: "Communication Protocols: CAN, CAN FD, Ethernet, MQTT",
+            member2_skills_4: "Design Achievement: Completed automotive-grade BMS acquisition board design, passed ISO 26262 functional safety certification",
+            member2_edu_title: "Education:",
+            member2_edu: "Master in Electronic Engineering, Beijing Institute of Technology (2022), focus: vehicular networking and embedded systems",
+            member3_name: "Sarah Chen",
+            member3_role: "Data Scientist",
+            member3_desc: "Expert in big data mining and cloud platform construction, ensuring efficient processing of massive battery data.",
+            member3_skills_title: "Professional Skills:",
+            member3_skills_1: "Big Data Technologies: Spark, Flink, Kafka, Hadoop",
+            member3_skills_2: "Cloud Platforms: AWS, Azure, Kubernetes, Docker",
+            member3_skills_3: "Databases: TimescaleDB, InfluxDB, PostgreSQL",
+            member3_skills_4: "System Architecture: Designed cloud platform supporting concurrent monitoring of millions of battery cells",
+            member3_edu_title: "Education:",
+            member3_edu: "Master in Computer Science, Stanford University (2023), focus: distributed computing and data engineering",
+            gallery_caption1: "Laboratory Daily Discussion",
+            gallery_caption2: "International Conference Academic Exchange",
+            gallery_caption3: "Annual Team Building",
+            gallery_caption4: "Team Collaboration Discussion",
+            gallery_click_hint: "(Click to enlarge)",
+            photo1: "Laboratory Daily Discussion",
+            photo2: "International Conference Academic Exchange",
+            photo3: "Annual Team Building",
+            click_enlarge: "(Click to enlarge)",
+            details: "Click for Details",
+            skills: "Professional Skills",
+            education: "Education"
+        },
+        news: {
+            update1_date: "2026.01",
+            update1_title: "PD1-IL2 Candidate Drug Animal Testing Breakthrough",
+            update1_desc: "Candidate protein 0042 showed excellent MC38 animal experimental results with superior expression and purification (transient expression 150-500mg/L, purity >90%), B16F10 experiment ongoing.",
+            update2_date: "2025.12",
+            update2_title: "AI Platform Successfully Screened 4 High-Potential Candidate Proteins",
+            update2_desc: "Through PBMC pSTAT5 experiments, successfully screened 4 candidate proteins (0008, 0042, 0059, 0085) from 30+ conforming monomers, preliminarily possessing PCC molecule potential.",
+            papers_title: "Journal Papers",
+            papers_details_title: "Paper Details:",
+            papers_summary_title: "Publication Achievements:",
+            paper1_desc: "First applied multi-objective reinforcement learning to tumor immunotherapy drug design. Through ZMutation algorithm achieved multi-dimensional optimization of affinity, immunogenicity, stability etc., receptor binding hit rate close to 100%, expressibility over 40%.",
+            paper2_desc: "Proposed LLM+Agent based data cold-start pipeline, achieving collection-screening-analysis-pre-annotation closed loop, significantly shortening data construction cycle, cross-literature/mechanism/target coverage improving generalization and robustness.",
+            papers_summary: "Published 30+ SCI papers, including 8 in Nature series and Cell series top journals, 12 in Drug Discovery Today and other drug R&D Q1 journals, with 500+ Google Scholar citations.",
+            patents_title: "Invention Patents",
+            patents_details_title: "Patent Details:",
+            patents_summary_title: "Patent Achievements:",
+            patent1_desc: "This invention discloses an intelligent design method for tumor immunotherapy drugs based on multi-objective reinforcement learning. Through ZMutation algorithm performs Pareto optimization under constraints of mutation rules and synthesizability, achieving controllable trade-offs of affinity, immunogenicity, stability and other multi-dimensional objectives, receptor binding hit rate over 98%.",
+            patent2_desc: "This invention proposes a drug R&D data cold-start system integrating large language models and agents, achieving collection-screening-analysis-pre-annotation closed loop. Compared to traditional data construction methods, cycle shortened by 60%, labor cost reduced by 70%, consistency significantly improved.",
+            patents_summary: "Applied for 18 invention patents, granted 8, including 2 international PCT patents. Core technologies applied to multiple drug R&D projects.",
+            award_title: "2025 AI & Biomedicine Cross-Innovation Award",
+            award_org: "Presented by: Chinese Association for Artificial Intelligence",
+            award1_caption: "ICAIS Best Paper Award",
+            award2_caption: "The AI Reviewer's Appraisal Award"
+        },
+        timeline: {
+            t1_title: "Platform Launch",
+            t1_desc: "Assembled AI+Biology interdisciplinary team, established PD1-IL2 R&D roadmap",
+            t2_title: "AI Breakthrough",
+            t2_desc: "Multi-objective optimization algorithm validated, receptor binding hit rate near 100%",
+            t3_title: "Biological Validation",
+            t3_desc: "Successfully expressed 40+ IL2 monomers, expressibility over 40%",
+            t4_title: "Candidate Screening",
+            t4_desc: "Screened 4 candidate proteins, preliminarily possessing PCC molecule potential",
+            t5_title: "Animal Testing",
+            t5_desc: "Candidate protein 0042 MC38 animal experiment showed good results",
+            t6_title: "Clinical Translation",
+            t6_desc: "Advancing IND filing, initiating preclinical research"
+        },
+        recruit: {
+            job1_title: "AI Algorithm Researcher",
+            job1_desc: "Responsible for research and implementation of core algorithms such as battery lifespan prediction and fault diagnosis.",
+            job1_req1: "Master's degree or above in Computer Science, Automation, Mathematics or related fields;",
+            job1_req2: "Proficient in Python/C++, expert in PyTorch/TensorFlow frameworks;",
+            job1_req3: "First-author papers at top conferences preferred.",
+            job2_title: "BMS Hardware Engineer",
+            job2_desc: "Responsible for schematic design and PCB layout of BMS acquisition boards and main control boards.",
+            job2_req1: "Bachelor's degree or above in Electronic Engineering or related fields;",
+            job2_req2: "Familiar with ARM/DSP architectures, experience in automotive-grade hardware development preferred;",
+            job2_req3: "Proficient in Altium Designer/Cadence.",
+            job3_title: "Embedded Software Engineer",
+            job3_desc: "Responsible for BMS embedded software development, including drivers, communication protocol stacks, etc.",
+            job3_req1: "Bachelor's degree or above in Software Engineering, Computer Science or related fields;",
+            job3_req2: "Proficient in C/C++, familiar with embedded development process;",
+            job3_req3: "Experience with AutoSAR, OSEK/VDX preferred.",
+            responsibilities: "Responsibilities:",
+            requirements: "Requirements:",
+            contact_desc: "Please send your resume to the following email with subject line: Name + Position",
+            location: "Location: Zhongguancun Frontier Technology Building, Haidian District, Beijing"
+        },
+        footer: {
+            repo: "Gitee Repository",
+            contact: "Contact Us",
+            copyright: "© 2026 ZhiYu AI Drug Design Platform. All Rights Reserved."
+        },
+        interactive: {
+            expand: "Click to Expand",
+            collapse: "Click to Collapse",
+            details: "Click for Details",
+            close: "Close"
+        }
+    }
+};
+
+class I18n {
+    constructor() {
+        this.currentLang = this.getStoredLanguage() || this.detectLanguage() || 'zh';
+        this.applyLanguage(this.currentLang);
+    }
+
+    getStoredLanguage() {
+        return localStorage.getItem('lang');
+    }
+
+    detectLanguage() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        if (urlLang && (urlLang === 'zh' || urlLang === 'en')) {
+            return urlLang;
+        }
+
+        const browserLang = navigator.language || navigator.userLanguage;
+        if (browserLang.startsWith('zh')) {
+            return 'zh';
+        } else if (browserLang.startsWith('en')) {
+            return 'en';
+        }
+
+        return 'zh';
+    }
+
+    saveLanguage(lang) {
+        localStorage.setItem('lang', lang);
+    }
+
+    getTranslation(keyPath) {
+        const keys = keyPath.split('.');
+        let value = translations[this.currentLang];
+
+        for (const key of keys) {
+            if (value && value[key] !== undefined) {
+                value = value[key];
+            } else {
+                return keyPath;
+            }
+        }
+
+        return value;
+    }
+
+    applyLanguage(lang) {
+        console.log('Applying language:', lang);
+        this.currentLang = lang;
+        this.saveLanguage(lang);
+
+        document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        console.log('Translating elements:', elements.length);
+
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const translation = this.getTranslation(key);
+
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = translation;
+            } else {
+                element.textContent = translation;
+            }
+        });
+
+        this.updateLanguageSwitcher();
+        this.updateInteractiveBadges();
+        this.updateAriaLabels();
+
+        window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+    }
+
+    switchLanguage(lang) {
+        if (lang !== this.currentLang) {
+            this.applyLanguage(lang);
+        }
+    }
+
+    updateLanguageSwitcher() {
+        const buttons = document.querySelectorAll('.lang-btn');
+        buttons.forEach(btn => {
+            const btnLang = btn.getAttribute('data-lang');
+            if (btnLang === this.currentLang) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+
+    updateInteractiveBadges() {
+        const badges = document.querySelectorAll('.interactive-badge');
+        badges.forEach(badge => {
+            const parent = badge.closest('.expand-trigger');
+            if (parent) {
+                const isActive = parent.classList.contains('active');
+                badge.textContent = isActive ?
+                    translations[this.currentLang].interactive.collapse :
+                    translations[this.currentLang].interactive.expand;
+            }
+        });
+    }
+
+    updateAriaLabels() {
+        const hamburger = document.querySelector('.hamburger');
+        if (hamburger) {
+            const label = this.currentLang === 'zh' ? '切换导航' : 'Toggle navigation';
+            hamburger.setAttribute('aria-label', label);
+        }
+    }
+
+    getCurrentLanguage() {
+        return this.currentLang;
+    }
+}
+
+let i18n;
+window.i18n = i18n;
+
+function initI18n() {
+    console.log('Initializing i18n...');
+    i18n = new I18n();
+    window.i18n = i18n;
+
+    const langButtons = document.querySelectorAll('.lang-btn');
+    console.log('Found language buttons:', langButtons.length);
+
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = btn.getAttribute('data-lang');
+            console.log('Language button clicked:', lang);
+            if (i18n) {
+                i18n.switchLanguage(lang);
+            }
+        });
+
+        btn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                btn.click();
+            }
+        });
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+    initI18n();
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { I18n, translations };
+}
