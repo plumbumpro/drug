@@ -137,7 +137,7 @@ section {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Hero Section - Static Gradient Background */
+/* Hero Section - Static Gradient Background with Image */
 .hero {
     min-height: 90vh;
     /* Reduced slightly */
@@ -146,8 +146,26 @@ section {
     justify-content: center;
     text-align: center;
     background: radial-gradient(circle at top right, rgba(45, 90, 245, 0.15), transparent 40%),
-        radial-gradient(circle at bottom left, rgba(0, 242, 234, 0.1), transparent 40%);
+        radial-gradient(circle at bottom left, rgba(0, 242, 234, 0.1), transparent 40%),
+        url('../assets/page/page.png') center/cover no-repeat;
     padding-top: var(--nav-height);
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(11, 13, 17, 0.7) 0%, rgba(11, 13, 17, 0.5) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
@@ -815,6 +833,13 @@ footer {
     section {
         padding: 3rem 5%;
     }
+
+    .hero,
+    .hero-sm,
+    .hero-md {
+        background-position: center center;
+        background-size: cover;
+    }
 }
 /* Footer Styles Updated */
 .footer-content {
@@ -856,6 +881,25 @@ footer {
 
 .hero-md {
     min-height: 50vh;
+}
+
+/* Ensure hero variants have same background image */
+.hero-sm::before,
+.hero-md::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(11, 13, 17, 0.7) 0%, rgba(11, 13, 17, 0.5) 100%);
+    z-index: 1;
+}
+
+.hero-sm .hero-content,
+.hero-md .hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .text-primary {
