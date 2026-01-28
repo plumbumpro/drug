@@ -288,57 +288,6 @@ section {
     }
 }
 
-/* Achievements grid */
-.achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.achievement-item {
-    text-align: center;
-    background: var(--bg-card);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: 0.3s ease;
-}
-
-.achievement-item:hover {
-    border-color: var(--primary);
-    transform: translateY(-3px);
-}
-
-.achievement-img {
-    max-height: 300px;
-    width: auto;
-    border-radius: 8px;
-    border: 2px solid rgba(0, 242, 234, 0.3);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-    margin: 0 auto;
-    display: block;
-}
-
-.achievement-img:hover {
-    transform: scale(1.02);
-    border-color: var(--primary);
-}
-
-.achievement-img.scale-down {
-    max-height: 250px;
-}
-
-@media (max-width: 768px) {
-    .achievement-img {
-        max-height: 250px;
-    }
-
-    .achievement-img.scale-down {
-        max-height: 200px;
-    }
-}
-
 .card {
     background: var(--bg-card);
     border: 1px solid rgba(255, 255, 255, 0.05);
