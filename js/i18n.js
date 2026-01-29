@@ -12,7 +12,7 @@ const translations = {
         hero: {
             index_title: "智御",
             index_subtitle: "AI肿瘤免疫药物自主设计平台",
-            index_description: "AI自主药物设计平台，超越平台化的新定义",
+            index_description: "AI自主药物设计平台--超越传统药物设计与单一平台化的全新定义",
             learn_more: "了解更多",
             team_title: "世界一流的研究团队",
             team_subtitle: "汇聚跨学科精英，攻克制药领域的终极难题",
@@ -198,14 +198,14 @@ const translations = {
             content_ch4_text: "构建智能化靶点信息检索与分析引擎，实时追踪全球靶点研究动态，为药物研发提供精准的靶点选择与验证支持。"
         },
         faq: {
-            q1: "什么是PD1-IL2融合蛋白？",
-            a1: "PD1-IL2融合蛋白是一种创新的肿瘤免疫治疗药物，将PD1抗体与IL2细胞因子融合，既能阻断肿瘤免疫逃逸，又能激活免疫细胞。IL2作为连接抗体与多肽的关键细胞因子，其研究将推动多种免疫治疗模式的发展。",
             q2: "平台的AI设计流程是怎样的？",
             a2: "平台采用模块化设计：临床信息层负责市场与靶点信息收集；AI立项层进行智能决策；数字实验室层进行序列设计与优化，通过多目标强化学习实现亲和力、稳定性等多维度优化；实验管理层实现干湿闭环反馈，持续提升预测准确性。",
             q3: "相比传统药物研发，AI平台有什么优势？",
             a3: "传统药物研发采用试错法，周期长成本高。我们的AI平台通过多目标优化，实现可表达性超过40%，受体结合命中率接近100%。平台具备数据冷启动能力，可在文献数据不足时自主生成训练数据。跨文献/机制/靶点的多层次建模支撑多路径探索，显著缩短研发周期，降低研发成本。",
             q4: "项目的应用前景如何？",
-            a4: "项目聚焦PD1-IL2融合蛋白等肿瘤免疫药物，具备千亿规模市场潜力。平台技术高度可拓展，可快速迁移至抗体VHH、VL、VH设计与优化等领域。目前已获得4个不同活性IL2候选蛋白，初步具备PCC分子潜力，动物实验结果良好。平台的产业转化潜力显著，有望在肿瘤免疫治疗领域实现突破。"
+            a4: "项目聚焦PD1-IL2融合蛋白等肿瘤免疫药物，具备千亿规模市场潜力。平台技术高度可拓展，可快速迁移至抗体VHH、VL、VH设计与优化等领域。目前已获得4个不同活性IL2候选蛋白，初步具备PCC分子潜力，动物实验结果良好。平台的产业转化潜力显著，有望在肿瘤免疫治疗领域实现突破。",
+            q1: "什么是PD1-IL2融合蛋白？",
+            a1: "PD1-IL2融合蛋白是一种创新的肿瘤免疫治疗药物，将PD1抗体与IL2细胞因子融合，既能阻断肿瘤免疫逃逸，又能激活免疫细胞。IL2作为连接抗体与多肽的关键细胞因子，其研究将推动多种免疫治疗模式的发展。"
         },
         news: {
             update1_date: "2026.01",
@@ -288,7 +288,7 @@ const translations = {
         hero: {
             index_title: "ImmunoSapienta",
             index_subtitle: "AI-driven Tumor Immunotherapy Drug Design Platform",
-            index_description: "AI Autonomous Drug Design Platform: Beyond Platform Paradigm Redefinition",
+            index_description: "AI Autonomous Drug Design Platform: Beyond Traditional Drug Design and Single Platform Paradigm Redefinition",
             learn_more: "Learn More",
             team_title: "World-Class Research Team",
             team_subtitle: "Gathering interdisciplinary elites to tackle the ultimate challenges in energy.",
@@ -347,14 +347,14 @@ const translations = {
             content_ch4_text: "Build an intelligent target information retrieval and analysis engine, track global target research dynamics in real-time, and provide precise target selection and validation support for drug R&D."
         },
         faq: {
-            q1: "What is PD1-IL2 fusion protein?",
-            a1: "PD1-IL2 fusion protein is an innovative tumor immunotherapy drug that fuses PD1 antibody with IL2 cytokine, both blocking tumor immune escape and activating immune cells. IL2 as a key cytokine linking antibodies and peptides, its research will promote development of multiple immunotherapy modalities.",
             q2: "What is the AI design workflow of the platform?",
             a2: "Platform adopts modular design: Clinical information layer handles market and target information collection; AI project initiation layer makes intelligent decisions; Digital laboratory layer performs sequence design and optimization through multi-objective reinforcement learning for affinity, stability and other multi-dimensional optimization; Experiment management layer achieves wet-dry loop feedback to continuously improve prediction accuracy.",
             q3: "What advantages does the AI platform have over traditional drug R&D?",
             a3: "Traditional drug R&D uses trial-and-error approach with long cycles and high costs. Our AI platform through multi-objective optimization achieves expressibility over 40% and receptor binding hit rate close to 100%. Platform has data cold-start capability to autonomously generate training data when literature data is insufficient. Multi-level modeling across literature/mechanism/target supports multi-path exploration, significantly shortening R&D cycles and reducing costs.",
             q4: "What are the application prospects of this project?",
-            a4: "Project focuses on PD1-IL2 fusion proteins and other tumor immunotherapy drugs with billion-scale market potential. Platform technology is highly scalable and can rapidly migrate to antibody VHH, VL, VH design and optimization. Currently obtained 4 IL2 candidate proteins with different activities, preliminarily possessing PCC molecule potential, with good animal experimental results. Platform has significant industrial translation potential with promise for breakthroughs in tumor immunotherapy field."
+            a4: "Project focuses on PD1-IL2 fusion proteins and other tumor immunotherapy drugs with billion-scale market potential. Platform technology is highly scalable and can rapidly migrate to antibody VHH, VL, VH design and optimization. Currently obtained 4 IL2 candidate proteins with different activities, preliminarily possessing PCC molecule potential, with good animal experimental results. Platform has significant industrial translation potential with promise for breakthroughs in tumor immunotherapy field.",
+            q1: "What is PD1-IL2 fusion protein?",
+            a1: "PD1-IL2 fusion protein is an innovative tumor immunotherapy drug that fuses PD1 antibody with IL2 cytokine, both blocking tumor immune escape and activating immune cells. IL2 as a key cytokine linking antibodies and peptides, its research will promote development of multiple immunotherapy modalities."
         },
         team: {
             leader_name: "Dr. Feng Yu",
