@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智能体 - 智御 AI Drug | 全链路智能药物研发平台</title>
+    <meta name="description" content="智御AI智能体平台：模块化、多目标优化、可控性三大核心技术，四大智能层协同驱动药物研发全流程。">
+    <meta name="keywords" content="AI智能体, 药物设计, 多目标优化, 模块化, 干湿闭环, 冷启动">
+    <meta name="author" content="智御 AI Drug Design Platform">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://zhiyu-ai.com/ai-agent.html">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">智御 AI Drug Design</div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
+            <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li>
+                <a href="#" class="nav-dropdown-trigger" data-i18n="nav.products">产品与平台
+                    <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </a>
+                <div class="nav-dropdown">
+                    <a href="ai-agent.html" class="active" data-i18n="nav.ai_agent">AI智能体</a>
+                    <a href="pipeline.html" data-i18n="nav.pipeline">研发管线</a>
+                </div>
+            </li>
+            <li><a href="team.html" data-i18n="nav.team">团队介绍</a></li>
+            <li><a href="recruit.html" data-i18n="nav.recruit">加入我们</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="zh" aria-label="Switch to Chinese">中文</button>
+            <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero hero-sm">
+        <div class="hero-content">
+            <h1 data-i18n="hero.agent_title">AI智能体平台</h1>
+            <p data-i18n="hero.agent_subtitle">自主化、模块化、自动化、批量化 — 超越传统药物设计的全新范式</p>
+        </div>
+    </header>
+
+    <!-- Architecture Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title"><span data-i18n="sections.architecture">系统架构</span></h2>
+            <p class="section-subtitle" data-i18n="sections.architecture_desc">AI药物研发系统模块分四个层面，形成完整的智能化研发闭环</p>
+
+            <div class="layer-diagram">
+                <div class="layer-item">
+                    <div class="layer-number">1</div>
+                    <div class="layer-info">
+                        <h3 data-i18n="agent.layer1_title">临床市场价值层</h3>
+                        <p data-i18n="agent.layer1_full">构建动态情报中枢，通过智能信息引擎聚合商业信息平台、社媒平台、会议平台等信息，每天推荐最新的极具潜力的靶点和药物。实时汇聚全球临床需求、真实世界证据、竞争管线、专利地图与支付政策，通过多源异构数据融合生成高置信度市场洞察与立项方向。</p>
+                    </div>
+                </div>
+                <div class="layer-item">
+                    <div class="layer-number">2</div>
+                    <div class="layer-info">
+                        <h3 data-i18n="agent.layer2_title">AI科学家层</h3>
+                        <p data-i18n="agent.layer2_full">内嵌药物研发知识图谱与决策逻辑链，模拟顶尖科学家思维，对靶点生物学合理性、差异化路径、风险矩阵进行深度推演与优先级决策。打破现有AI工具的孤岛状态，贯穿"情报整合-科学推演-风险权衡"的智能体级协同。</p>
+                    </div>
+                </div>
+                <div class="layer-item">
+                    <div class="layer-number">3</div>
+                    <div class="layer-info">
+                        <h3 data-i18n="agent.layer3_title">数字实验室层</h3>
+                        <p data-i18n="agent.layer3_full">集成生成式分子设计、靶点-配体相互作用模拟、ADMET预测等AI模型，完成高通量干实验筛选与优化。通过多目标强化学习优化（ZMutation），在突变规则、可合成性等约束下进行Pareto优化。</p>
+                    </div>
+                </div>
+                <div class="layer-item">
+                    <div class="layer-number">4</div>
+                    <div class="layer-info">
+                        <h3 data-i18n="agent.layer4_title">CRO实验智能管理层</h3>
+                        <p data-i18n="agent.layer4_full">自主规划湿实验方案、智能调度外部CRO资源、实时监控实验进程，并将关键验证数据精准反哺数字实验室，驱动模型迭代，形成"情报输入—干实验筛选—湿实验验证—知识进化"的干湿闭环。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="bg-transparent">
+        <div class="container">
+            <h2 class="section-title"><span data-i18n="sections.core_features">核心技术特性</span></h2>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature.modular_title">模块化设计</h3>
+                    <p data-i18n="feature.modular_desc">AI药物研发系统模块分四个层面：临床市场价值层、AI科学家层、数字实验室层、实验智能管理层。各模块可独立升级、灵活组合，支持多靶点并行运算设计。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature.multi_obj_title">多目标优化</h3>
+                    <ul>
+                        <li data-i18n="feature.multi_obj_1">目标分解与可度量化：亲和力、免疫原性、稳定性等权重可调</li>
+                        <li data-i18n="feature.multi_obj_2">多目标强化学习优化（ZMutation）：Pareto/权重优化</li>
+                        <li data-i18n="feature.multi_obj_3">实验对齐：结合命中率接近100%，多受体结合读出30+/30+</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature.control_title">可控性</h3>
+                    <ul>
+                        <li data-i18n="feature.control_1">数据冷启动流水线（LLM+Agent）：流程可追溯、复现</li>
+                        <li data-i18n="feature.control_2">领域知识约束：靶点要点、突变规则、优化目标模板显式化</li>
+                        <li data-i18n="feature.control_3">干湿闭环校准：实验readout回流训练，迭代校准预测器与策略</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature.robust_title">泛化与鲁棒性</h3>
+                    <ul>
+                        <li data-i18n="feature.robust_1">跨文献/机制/靶点覆盖，降低过拟合</li>
+                        <li data-i18n="feature.robust_2">多层次建模：基础蛋白LM + 多性质预测，避免单一打分坍缩</li>
+                        <li data-i18n="feature.robust_3">输出多簇差异化候选，支持并行推进与风险对冲</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature.empower_title">平台赋能</h3>
+                    <p data-i18n="feature.empower_desc">赋能药企（尤其中小型Biotech）突破专家资源瓶颈，实现立项决策标准化、智能化。支持创新药重大专项申请、CGT/IIT/CMC政策支持，以及智能药物靶点信息引擎服务。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature.auto_title">自动化闭环</h3>
+                    <p data-i18n="feature.auto_desc">情报层自动生成结构化报告，数字实验室输出自动转化为CRO可执行协议。通过轻量级API对接合作CRO，实现干实验推演—湿实验验证—反馈—模型微调的全自动化运行。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposal Output Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title"><span data-i18n="sections.proposal">立项书输出示例</span></h2>
+            <p class="section-subtitle" data-i18n="sections.proposal_desc">AI智能体自动生成的立项评估报告结构（脱敏示例）</p>
+
+            <div class="proposal-preview">
+                <div class="proposal-header">
+                    <h3 data-i18n="proposal.title">AI立项评估报告 — [靶点名称]</h3>
+                </div>
+                <div class="proposal-body">
+                    <div class="proposal-section">
+                        <h4 data-i18n="proposal.s1_title">1. 靶点概述与生物学背景</h4>
+                        <p data-i18n="proposal.s1_desc">靶点基因/蛋白信息、信号通路、在疾病中的作用机制、已知配体与调控关系</p>
+                    </div>
+                    <div class="proposal-section">
+                        <h4 data-i18n="proposal.s2_title">2. 市场竞争格局分析</h4>
+                        <p data-i18n="proposal.s2_desc">全球在研管线统计、竞品临床阶段、专利到期时间线、市场规模预测</p>
+                    </div>
+                    <div class="proposal-section">
+                        <h4 data-i18n="proposal.s3_title">3. 临床未满足需求评估</h4>
+                        <p data-i18n="proposal.s3_desc">现有疗法局限性、患者人群特征、临床终点与响应率对比、差异化治疗窗口</p>
+                    </div>
+                    <div class="proposal-section">
+                        <h4 data-i18n="proposal.s4_title">4. AI设计策略与分子方案</h4>
+                        <p data-i18n="proposal.s4_desc">设计路径选择（融合蛋白/抗体/多肽）、多目标优化参数、候选分子序列与预测性质</p>
+                    </div>
+                    <div class="proposal-section">
+                        <h4 data-i18n="proposal.s5_title">5. 风险矩阵与缓解方案</h4>
+                        <p data-i18n="proposal.s5_desc">技术风险、临床风险、竞争风险评级、对应缓解策略与备选方案</p>
+                    </div>
+                    <div class="proposal-section">
+                        <h4 data-i18n="proposal.s6_title">6. 实验验证计划与里程碑</h4>
+                        <p data-i18n="proposal.s6_desc">干实验筛选→湿实验验证时间线、关键决策节点、预算估算与CRO对接方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:yufeng@zgci.ac.cn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span data-i18n="footer.contact">联系我们</span>
+                </a>
+            </div>
+            <p data-i18n="footer.copyright">&copy; 2026 智御 AI Drug Design Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" role="dialog" aria-label="Image lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <img src="" alt="Enlarged view" class="lightbox-img">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

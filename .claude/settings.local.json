@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(start index.html)",
-      "Bash(start team.html)"
+      "Bash(start team.html)",
+      "Bash(python:*)",
+      "Bash(node:*)"
     ]
   }
 }

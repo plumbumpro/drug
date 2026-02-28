@@ -20,10 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         navLinksItems.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
+            // Don't close menu for dropdown triggers
+            if (!link.classList.contains('nav-dropdown-trigger')) {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            }
         });
 
         document.addEventListener('click', (e) => {
@@ -33,6 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Dropdown Navigation - prevent default on trigger links
+    const dropdownTriggers = document.querySelectorAll('.nav-dropdown-trigger');
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            // On mobile, toggle dropdown visibility
+            const parent = trigger.closest('li');
+            if (parent) {
+                parent.classList.toggle('dropdown-open');
+            }
+        });
+    });
+
+    // Mentor avatar links - prevent card expand when clicking avatar or external link
+    const mentorAvatarLinks = document.querySelectorAll('.mentor-avatar-link');
+    mentorAvatarLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    });
 
     // Back to Top Button
     const backToTop = document.querySelector('.back-to-top');

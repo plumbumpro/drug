@@ -48,6 +48,15 @@
         </button>
         <ul class="nav-links" id="primary-navigation">
             <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li>
+                <a href="#" class="nav-dropdown-trigger" data-i18n="nav.products">产品与平台
+                    <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </a>
+                <div class="nav-dropdown">
+                    <a href="ai-agent.html" data-i18n="nav.ai_agent">AI智能体</a>
+                    <a href="pipeline.html" data-i18n="nav.pipeline">研发管线</a>
+                </div>
+            </li>
             <li><a href="team.html" class="active" data-i18n="nav.team">团队介绍</a></li>
             <li><a href="recruit.html" data-i18n="nav.recruit">加入我们</a></li>
         </ul>
@@ -87,12 +96,27 @@
         <div class="container">
             <h2 class="section-title"><span data-i18n="sections.mentors">项目导师</span></h2>
             <div class="grid-container">
+                <!-- 何亮 -->
                 <div class="card expand-trigger" tabindex="0" role="button" aria-expanded="false">
-                     <div class="member-avatar">
-                        <img src="assets/mentor_photo/何亮.png" alt="chenxiangran">
-                     </div>
-                    <h3><span data-i18n="team.mentor1_name">何亮</span> <span class="interactive-badge" data-i18n="interactive.details">点击详情</span></h3>
-                    <span class="role" data-i18n="team.mentor1_role">北京中关村学院资深研究员</span>
+                    <div class="mentor-card-header">
+                        <a href="https://www.bjzgca.edu.cn/teacher/60f43c6da40943569a107cdc94e38ab4" target="_blank" rel="noopener noreferrer" class="mentor-avatar-link" title="访问个人主页">
+                            <img src="assets/mentor_photo/何亮.png" alt="何亮">
+                        </a>
+                        <div>
+                            <div class="mentor-name-row">
+                                <h3><span data-i18n="team.mentor1_name">何亮</span></h3>
+                                <a href="https://www.bjzgca.edu.cn/teacher/60f43c6da40943569a107cdc94e38ab4" target="_blank" rel="noopener noreferrer" class="mentor-external-link" title="个人主页" onclick="event.stopPropagation()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <span class="interactive-badge" data-i18n="interactive.details">点击详情</span>
+                            </div>
+                            <span class="role" data-i18n="team.mentor1_role">北京中关村学院资深研究员</span>
+                        </div>
+                    </div>
                     <p data-i18n="team.mentor1_desc">中国科学技术大学计算机专业学士和博士,研究方向涵盖生物基础模型、计算生物学、机器学习、图数据管理与知识图谱。</p>
                     <div class="expandable-content">
                         <div class="expandable-wrapper">
@@ -104,12 +128,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- 周旷奇 -->
                 <div class="card expand-trigger" tabindex="0" role="button" aria-expanded="false">
-                    <div class="member-avatar">
-                        <img src="assets/mentor_photo/周旷奇.jpg" alt="duhonogwei">
+                    <div class="mentor-card-header">
+                        <a href="https://www.bjzgca.edu.cn/teacher/ad2ogug9dja79qktdmypijg4ip9gp1mg" target="_blank" rel="noopener noreferrer" class="mentor-avatar-link" title="访问个人主页">
+                            <img src="assets/mentor_photo/周旷奇.jpg" alt="周旷奇">
+                        </a>
+                        <div>
+                            <div class="mentor-name-row">
+                                <h3><span data-i18n="team.mentor2_name">周旷奇</span></h3>
+                                <a href="https://www.bjzgca.edu.cn/teacher/ad2ogug9dja79qktdmypijg4ip9gp1mg" target="_blank" rel="noopener noreferrer" class="mentor-external-link" title="个人主页" onclick="event.stopPropagation()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <span class="interactive-badge" data-i18n="interactive.details">点击详情</span>
+                            </div>
+                            <span class="role" data-i18n="team.mentor2_role">北京中关村学院导师</span>
+                        </div>
                     </div>
-                    <h3><span data-i18n="team.mentor2_name">周旷奇</span> <span class="interactive-badge" data-i18n="interactive.details">点击详情</span></h3>
-                    <span class="role" data-i18n="team.mentor2_role">北京中关村学院导师</span>
                     <p data-i18n="team.mentor2_desc">新加坡国立大学电子计算机工程系博士,曾主持或参与多个科学智能相关的落地应用和开源项目。</p>
                     <div class="expandable-content">
                         <div class="expandable-wrapper">
@@ -121,12 +160,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- 魏宝乐 -->
                 <div class="card expand-trigger" tabindex="0" role="button" aria-expanded="false">
-                    <div class="member-avatar">
-                        <img src="assets/mentor_photo/魏宝乐.png" alt="hexing">
+                    <div class="mentor-card-header">
+                        <a href="https://www.bjzgca.edu.cn/teacher/ul19nx84yb7eer1aoueu2zzrxo9s58zi" target="_blank" rel="noopener noreferrer" class="mentor-avatar-link" title="访问个人主页">
+                            <img src="assets/mentor_photo/魏宝乐.png" alt="魏宝乐">
+                        </a>
+                        <div>
+                            <div class="mentor-name-row">
+                                <h3><span data-i18n="team.mentor3_name">魏宝乐</span></h3>
+                                <a href="https://www.bjzgca.edu.cn/teacher/ul19nx84yb7eer1aoueu2zzrxo9s58zi" target="_blank" rel="noopener noreferrer" class="mentor-external-link" title="个人主页" onclick="event.stopPropagation()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <span class="interactive-badge" data-i18n="interactive.details">点击详情</span>
+                            </div>
+                            <span class="role" data-i18n="team.mentor3_role">北京中关村学院导师</span>
+                        </div>
                     </div>
-                    <h3><span data-i18n="team.mentor3_name">魏宝乐</span> <span class="interactive-badge" data-i18n="interactive.details">点击详情</span></h3>
-                    <span class="role" data-i18n="team.mentor3_role">北京中关村学院导师</span>
                     <p data-i18n="team.mentor3_desc">博士毕业于北京大学王选计算机研究所，从事AI for Science、科学智能体等研究。</p>
                     <div class="expandable-content">
                         <div class="expandable-wrapper">
@@ -142,10 +196,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
     <footer>
         <div class="footer-content">
