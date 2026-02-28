@@ -58,6 +58,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Clickable cards (e.g. leader card) - click anywhere to open link
+    const clickableCards = document.querySelectorAll('.card-clickable');
+    clickableCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            if (e.target.closest('a')) return; // let real links work naturally
+            const href = card.getAttribute('data-href');
+            if (href) window.open(href, '_blank', 'noopener,noreferrer');
+        });
+    });
+
     // Back to Top Button
     const backToTop = document.querySelector('.back-to-top');
 
@@ -136,8 +146,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const expandTriggers = document.querySelectorAll('.expand-trigger');
 
     expandTriggers.forEach(trigger => {
-        trigger.addEventListener('click', () => {
-            // Find the expandable-content inside this trigger
+        trigger.addEventListener('click', (e) => {
+            // For mentor cards: only the badge expands, everything else navigates to homepage
+            const mentorLink = trigger.querySelector('.mentor-avatar-link');
+            if (mentorLink) {
+                const clickedBadge = e.target.closest('.interactive-badge');
+                const clickedExpandContent = e.target.closest('.expandable-content');
+
+                if (clickedBadge || clickedExpandContent) {
+                    // Clicked the expand badge or inside expanded content — do expand/collapse
+                    const content = trigger.querySelector('.expandable-content');
+                    if (content && clickedBadge) {
+                        const isActive = trigger.classList.toggle('active');
+                        content.classList.toggle('expanded');
+                        trigger.setAttribute('aria-expanded', isActive);
+
+                        const badge = trigger.querySelector('.interactive-badge');
+                        if (badge) {
+                            const currentLang = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
+                            badge.textContent = isActive ?
+                                (currentLang === 'zh' ? '点击收起' : 'Click to Collapse') :
+                                (currentLang === 'zh' ? '点击展开' : 'Click to Expand');
+                        }
+                    }
+                    // If clicked inside expandable-content, let links work naturally
+                    return;
+                }
+
+                // Clicked anywhere else on the card — navigate to mentor homepage
+                if (!e.target.closest('a')) {
+                    window.open(mentorLink.href, '_blank', 'noopener,noreferrer');
+                }
+                // If clicked an <a> tag, let it navigate naturally
+                return;
+            }
+
+            // Non-mentor cards: normal expand/collapse behavior
             const content = trigger.querySelector('.expandable-content');
             const icon = trigger.querySelector('.expand-icon');
 
@@ -146,7 +190,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.classList.toggle('expanded');
                 trigger.setAttribute('aria-expanded', isActive);
 
-                // Find badge and update text based on current language
                 const badge = trigger.querySelector('.interactive-badge');
                 if (badge) {
                     const currentLang = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
