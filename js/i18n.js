@@ -15,7 +15,7 @@ const translations = {
         hero: {
             index_title: "智御",
             index_subtitle: "AI肿瘤免疫药物自主设计平台",
-            index_tagline: "AI靶点与冷肿瘤药物自主发现",
+            index_tagline: "AI靶点与肿瘤药物自主发现",
             index_description: "基于多智能体协同的全链路药物研发平台，融合前沿AI技术与肿瘤免疫学，聚焦临床未满足需求，加速从靶点发现到候选分子的全流程。",
             btn_agent: "探索AI智能体",
             btn_pipeline: "查看研发管线",
@@ -34,16 +34,16 @@ const translations = {
             agent_title: "AI智能体平台",
             agent_subtitle: "自主化、模块化、自动化、批量化 — 超越传统药物设计的全新范式",
             pipeline_title: "研发管线",
-            pipeline_subtitle: "聚焦冷肿瘤领域，AI驱动创新药物从靶点到候选分子的全链路开发"
+            pipeline_subtitle: "聚焦肿瘤领域，AI驱动创新药物从靶点到候选分子的全链路开发"
         },
         sections: {
             intro: "项目介绍",
             ai_agent_intro: "AI智能体平台",
             ai_agent_intro_desc: "四大智能层协同驱动，构建全链路智能化药物研发体系",
             pipeline_overview: "研发管线概览",
-            pipeline_overview_desc: "聚焦冷肿瘤等高价值领域，AI驱动多管线并行推进",
-            cold_tumor: "为什么聚焦冷肿瘤",
-            cold_tumor_desc: "冷肿瘤是免疫治疗的下一个突破口，也是最大的未满足临床需求",
+            pipeline_overview_desc: "聚焦肿瘤等高价值领域，AI驱动多管线并行推进",
+            cold_tumor: "为什么聚焦肿瘤",
+            cold_tumor_desc: "肿瘤是免疫治疗的下一个突破口，也是最大的未满足临床需求",
             architecture: "系统架构",
             architecture_desc: "AI药物研发系统模块分四个层面，形成完整的智能化研发闭环",
             core_features: "核心技术特性",
@@ -52,7 +52,7 @@ const translations = {
             pipeline_feature: "管线特色",
             ai_results: "AI设计成果",
             ai_results_desc: "由生物侧专家评估AI生成的序列，数据直观展示研发进展",
-            cold_tumor_results: "冷肿瘤实验结果",
+            cold_tumor_results: "肿瘤实验结果",
             pipeline_extend: "平台拓展管线",
             faq: "常见问题",
             leader: "项目负责人",
@@ -102,11 +102,11 @@ const translations = {
             auto_desc: "情报层自动生成结构化报告，数字实验室输出自动转化为CRO可执行协议。通过轻量级API对接合作CRO，实现干实验推演—湿实验验证—反馈—模型微调的全自动化运行。"
         },
         pipeline: {
-            badge_cold: "冷肿瘤管线",
+            badge_cold: "肿瘤管线",
             badge_standard: "拓展管线",
             badge_batch: "批量化",
             z212_target: "靶点: PD1 + IL2",
-            z212_desc: "四个AI设计候选分子均对冷肿瘤表现明确药效，剂量窗口优于同类产品，动物实验结果良好。",
+            z212_desc: "四个AI设计候选分子均对肿瘤表现明确药效，剂量窗口优于同类产品，动物实验结果良好。",
             z212_stage: "临床前研究",
             il2_opt_title: "IL2变体优化",
             il2_opt_target: "靶点: IL2受体选择性",
@@ -128,11 +128,11 @@ const translations = {
         },
         cold: {
             challenge_title: "治疗困境",
-            challenge_desc: "冷肿瘤缺乏免疫细胞浸润，对当前主流PD-1/PD-L1免疫检查点抑制剂应答率极低，是临床最大的未满足需求之一。超过70%的实体瘤属于\"冷肿瘤\"表型。",
+            challenge_desc: "肿瘤缺乏免疫细胞浸润，对当前主流PD-1/PD-L1免疫检查点抑制剂应答率极低，是临床最大的未满足需求之一。超过70%的实体瘤属于\"肿瘤\"表型。",
             solution_title: "AI解决方案",
-            solution_desc: "我们的AI平台通过PD1-IL2融合蛋白策略，既阻断免疫逃逸又激活免疫细胞，将\"冷肿瘤\"转化为\"热肿瘤\"。多目标优化确保药效与安全性的最佳平衡。",
+            solution_desc: "我们的AI平台通过PD1-IL2融合蛋白策略，既阻断免疫逃逸又激活免疫细胞，将\"肿瘤\"转化为\"热肿瘤\"。多目标优化确保药效与安全性的最佳平衡。",
             market_title: "市场机会",
-            market_desc: "PD1-IL2融合蛋白赛道具备千亿规模市场潜力，是肿瘤免疫治疗下一阶段突破的关键方向。先发布局冷肿瘤领域，可建立显著的竞争壁垒与差异化优势。"
+            market_desc: "PD1-IL2融合蛋白赛道具备千亿规模市场潜力，是肿瘤免疫治疗下一阶段突破的关键方向。先发布局肿瘤领域，可建立显著的竞争壁垒与差异化优势。"
         },
         proposal: {
             title: "AI立项评估报告 — [靶点名称]",
@@ -170,7 +170,7 @@ const translations = {
             extend_note: "相关研究可泛化到抗体的VHH、VL、VH设计与优化，具有很好的产业转化潜力"
         },
         cold_result: {
-            efficacy_title: "四个分子均对冷肿瘤表现明确药效",
+            efficacy_title: "四个分子均对肿瘤表现明确药效",
             dosage_title: "剂量窗口",
             dosage_desc: "优于信达IBI363。0042K/0085K/2149最高安全剂量30mg/kg，0008K/0059K为40mg/kg。最低起效剂量10mg/kg。",
             ai_title: "AI精准发现",
@@ -348,8 +348,8 @@ const translations = {
             a4: "项目聚焦PD1-IL2融合蛋白等肿瘤免疫药物，具备千亿规模市场潜力。平台技术高度可拓展，可快速迁移至抗体VHH、VL、VH设计与优化等领域。目前已获得4个不同活性IL2候选蛋白，初步具备PCC分子潜力，动物实验结果良好。平台的产业转化潜力显著，有望在肿瘤免疫治疗领域实现突破。",
             q1: "什么是PD1-IL2融合蛋白？",
             a1: "PD1-IL2融合蛋白是一种创新的肿瘤免疫治疗药物，将PD1抗体与IL2细胞因子融合，既能阻断肿瘤免疫逃逸，又能激活免疫细胞。IL2作为连接抗体与多肽的关键细胞因子，其研究将推动多种免疫治疗模式的发展。",
-            q5: "什么是冷肿瘤？为什么它是重要的研究方向？",
-            a5: "冷肿瘤是指免疫细胞浸润较少的肿瘤微环境，导致患者对免疫检查点抑制剂等免疫疗法响应不佳。超过70%的实体瘤属于冷肿瘤表型，是当前肿瘤免疫治疗最大的未满足需求。我们通过PD1-IL2融合蛋白策略，将冷肿瘤\"加热\"为免疫应答活跃的热肿瘤，突破治疗瓶颈。"
+            q5: "什么是肿瘤？为什么它是重要的研究方向？",
+            a5: "肿瘤是指免疫细胞浸润较少的肿瘤微环境，导致患者对免疫检查点抑制剂等免疫疗法响应不佳。超过70%的实体瘤属于肿瘤表型，是当前肿瘤免疫治疗最大的未满足需求。我们通过PD1-IL2融合蛋白策略，将肿瘤\"加热\"为免疫应答活跃的热肿瘤，突破治疗瓶颈。"
         },
         news: {
             update1_date: "2026.01",
